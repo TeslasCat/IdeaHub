@@ -5,4 +5,5 @@ Collaborative Idea Storage
 
 
 - Nice look and feel e.g. GitHub
-- Collaborith 
+- Collaborative editing [etherpad](http://etherpad.org/)
+- Version Control
