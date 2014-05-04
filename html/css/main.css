@@ -1,0 +1,297 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    color: #333333;
+}
+
+
+.clear {
+    overflow: hidden;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+hr {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #EEEEEE -moz-use-text-color -moz-use-text-color;
+    border-image: none;
+    border-right: 0 none;
+    border-style: solid none none;
+    border-width: 1px 0 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+
+.button {
+    position: relative;
+    overflow: visible;
+    display: inline-block;
+    padding: 0.5em 1.6em;
+    border: 1px solid #d4d4d4;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    text-shadow: 1px 1px 0 #fff;
+    font: 10px;
+    color: #333;
+    white-space: nowrap;
+    cursor: pointer;
+    outline: none;
+    background-color: #ececec;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f4f4f4), to(#ececec));
+    background-image: -moz-linear-gradient(#f4f4f4, #ececec);
+    background-image: -ms-linear-gradient(#f4f4f4, #ececec);
+    background-image: -o-linear-gradient(#f4f4f4, #ececec);
+    background-image: linear-gradient(#f4f4f4, #ececec);
+    -moz-background-clip: padding; /* for Firefox 3.6 */
+    background-clip: padding-box;
+    border-radius: 5px;
+    /* IE hacks */
+    zoom: 1;
+    *display: inline;
+}
+
+.button:hover,
+.button:focus,
+.button:active,
+.button.active {
+    border-color: #515d6d;
+    text-decoration: none;
+    text-shadow: -1px -1px 0 rgba(0,0,0,0.3);
+    color: #fff;
+
+    background: #515d6d; /* Old browsers */
+    background: -moz-linear-gradient(top, #515d6d 0%, #414956 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#515d6d), color-stop(100%,#414956)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #515d6d 0%,#414956 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #515d6d 0%,#414956 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #515d6d 0%,#414956 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #515d6d 0%,#414956 100%); /* W3C */
+}
+
+.button:active,
+.button.active {
+    background: #414956; /* Old browsers */
+    background: -moz-linear-gradient(top, #414956 0%, #515d6d 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#414956), color-stop(100%,#515d6d)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #414956 0%,#515d6d 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #414956 0%,#515d6d 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #414956 0%,#515d6d 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #414956 0%,#515d6d 100%); /* W3C */
+}
+
+/* overrides extra padding on button elements in Firefox */
+.button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+
+
+.container {
+    position: relative;
+}
+
+header.main-header {
+    background: #515d6d; /* Old browsers */
+    background: -moz-linear-gradient(top, #515d6d 0%, #414956 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#515d6d), color-stop(100%,#414956)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #515d6d 0%,#414956 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #515d6d 0%,#414956 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #515d6d 0%,#414956 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #515d6d 0%,#414956 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#515d6d', endColorstr='#414956',GradientType=0 ); /* IE6-9 */
+
+    border-bottom: 1px solid #373D47;
+
+    height: 40px;
+    overflow: hidden;
+
+    margin-bottom: 32px;
+}
+
+header.main-header a {
+    text-decoration: none;
+}
+
+header.main-header .logo {
+    display: inline-block;
+    text-align: center;
+    float: left;
+
+    width: 50px;
+    padding-top: 3px;
+    margin-right: 8px;
+}
+
+header.main-header .logo:hover {
+    background: #373D47;
+}
+
+header.main-header .logo i {
+    color: white;
+    font-size: 35px;
+    text-shadow: 2px 2px 0 #444;
+}
+
+header.main-header .location {
+    line-height: 39px;
+    font-size: 1.6em;
+    color: white;
+    text-shadow: 2px 2px 0 #444;
+}
+
+
+header.main-header nav ul {
+    list-style: none;
+}
+
+header.main-header nav ul li {
+    float: right;
+}
+
+header.main-header nav ul li a {
+    height: 45px;
+    line-height: 45px;
+
+    display: inline-block;
+
+    padding: 0 12px;
+}
+
+header.main-header nav ul li a img {
+    height: 30px;
+    width: 30px;
+    margin: 5px 0;
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    opacity: 0.6;
+
+
+    -webkit-transition: opacity .1s ease-in-out;
+    -moz-transition: opacity .1s ease-in-out;
+    -o-transition: opacity .1s ease-in-out;
+    transition: opacity .1s ease-in-out;
+}
+
+header.main-header nav ul li a:hover img {
+    opacity: 1;
+}
+
+header.main-header nav ul li a i {
+    color: #AAAAAA;
+
+    -webkit-transition: color .1s ease-in-out;
+    -moz-transition: color .1s ease-in-out;
+    -o-transition: color .1s ease-in-out;
+    transition: color .1s ease-in-out;
+}
+
+header.main-header nav ul li a:hover i {
+    color: white;
+}
+
+
+
+/* profile dropdown */
+header.main-header nav ul li.avatar a {
+    padding: 0 10px;
+}
+
+header.main-header nav ul li.avatar a.active {
+    background: #373D47;
+}
+
+header.main-header nav ul li.avatar a.active img {
+    opacity: 1;
+}
+
+#profile-dropdown {
+    background: #373D47;
+
+    position: absolute;
+    right: 0;
+    top: -32px;
+    width: 250px;
+
+    color: white;
+    display: none;
+    padding: 20px;
+}
+
+#profile-dropdown.active {
+    display: block;
+}
+
+#profile-dropdown h3 {
+    text-align: center;
+    width: 100%;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 0 #444;
+}
+
+#profile-dropdown h3 img {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+
+form .field {
+    padding: 10px 0;
+}
+
+form label {
+    width: 16%;
+    text-align: right;
+    font-weight: 500;
+    color: #444;
+
+    vertical-align: top;
+
+    display: inline-block;
+    padding: 7px 25px 0 0;
+}
+
+form label.optional::after {
+    content: '(optional)';
+    color: #AAA;
+    display: block;
+    padding-top: 6px;
+}
+
+form input,
+form textarea,
+form .tagging {
+    border: 1px solid #CCCCCC;
+    border-radius: 4px;
+    outline: none;
+
+    width: 83%;
+
+    padding: 6px 10px;
+
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    font-size: 12px;
+}
+
+form textarea {
+    height: 125px;
+
+    padding: 10px;
+}
