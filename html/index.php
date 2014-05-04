@@ -1,5 +1,5 @@
 <?php require('../files/header.php'); ?>
 
-        Content
+        Main content
 
 <?php require('../files/footer.php'); ?>
